@@ -26,8 +26,26 @@ tec1 experiments with Lissajous curves
 
 ## 3 use FAST FOURIER TRANSFORM to make a audio more clear and free from distortion 
 mathematical steps
-1. Convert the signal from the time domain to the frequency domain using the Fourier transform. 
-2. Identify the frequencies that are causing distortion.  
-3. Apply a filter to remove the distortion-causing frequencies.  
-4. Convert the signal back to the time domain using the inverse Fourier transform.  
+1. Convert the signal from the time domain to the frequency domain using the Fourier transform. The Fourier transform of a signal x(t) is given by:
+```
+X(f) = ∫x(t)e^-j2πftdt
+```
+where f is the frequency in Hz and t is time in seconds.
+
+2. Identify the frequencies that are causing distortion.  The frequencies that are causing distortion are the frequencies that are not integer multiples of the fundamental frequency. These are called harmonic frequencies. If the fundamental frequency is f, then the harmonic frequencies are 2f, 3f, 4f, 5f, etc.
+
+
+3. Apply a filter to remove the distortion-causing frequencies.  The way to remove the harmonic frequencies is to filter the signal. This can be done using a low pass filter, which allows frequencies below a certain cutoff frequency to pass through and blocks frequencies above the cutoff frequency. The cutoff frequency is usually chosen to be the Nyquist frequency, which is half the sampling rate. if the sampling rate is fs, then the Nyquist frequency is fs/2. This means that the cutoff frequency for the low pass filter is fs/2.  Thus, the frequencies that are removed by the low pass filter are the frequencies above fs/2.
+The mathematical model for a low pass filter applied to frequency f is: 
+```
+H(f) = 1/(1 + (f/fc)^2)
+```
+where fc is the cutoff frequency.
+
+
+4. Convert the signal back to the time domain using the inverse Fourier transform.  The inverse Fourier transform of a signal X(f) is given by:
+```
+x(t) = ∫X(f)e^j2πftdf
+```
+where f is the frequency in Hz and t is time in seconds.
 
