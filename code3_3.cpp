@@ -1,5 +1,5 @@
 // code3_3
-
+// This program applies a low-pass filter to an input signal in order to remove distortion-causing frequencies.
 
 #include <iostream>
 #include <cmath>
