@@ -1,7 +1,7 @@
 //  using Lissajous curves to visualize heart rhythms. 
 //  use a signal input from heart as variable H. the code should display the heart pulses.
   
-
+// This is a simple program that prints a half sine wave.
 
    #include <stdio.h>
    #include <math.h>
