@@ -1,3 +1,4 @@
+; This code produces a sine wave.
 
 #include <stdio.h>
 #include <math.h>
