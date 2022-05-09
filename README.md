@@ -1,3 +1,5 @@
+MATHS AND CODE IN DRAFT STAGE, NOT CHECK
+
 # tec-Lissajous
 tec1 experiments with Lissajous curves
 
