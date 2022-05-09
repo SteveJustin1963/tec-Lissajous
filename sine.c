@@ -1,4 +1,4 @@
-; This code produces a sine wave.
+\\ This code prints out the sine of every degree from 0 to 359.
 
 #include <stdio.h>
 #include <math.h>
