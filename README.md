@@ -24,3 +24,13 @@ tec1 experiments with Lissajous curves
 19. To study the interference of light waves
 20. To investigate the properties of waveguides
 
+## 3
+
+use FAST FOURIER TRANSFORM to make a audio more clear and free from distortion 
+list the mathematical steps
+
+1. Convert the signal from the time domain to the frequency domain using the Fourier transform.
+2. Identify the frequencies that are causing distortion.
+3. Apply a filter to remove the distortion-causing frequencies.
+4. Convert the signal back to the time domain using the inverse Fourier transform.
+
