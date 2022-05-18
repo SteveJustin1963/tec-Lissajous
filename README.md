@@ -51,3 +51,5 @@ x(t) = ∫X(f)e^j2πftdf
 ```
 where f is the frequency in Hz and t is time in seconds.
 
+5. code attempt  
+- https://github.com/SteveJustin1963/tec-Lissajous/blob/main/3_optimize.c
